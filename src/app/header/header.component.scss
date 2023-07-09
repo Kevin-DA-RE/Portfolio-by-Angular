@@ -1,0 +1,23 @@
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 20vh;
+    background-color: beige;
+    align-content: space-between;
+    align-items: center;
+
+
+    img {
+        width: 10%;
+    }
+
+    nav {
+        width: 50%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 25px;
+    }
+}

@@ -1,0 +1,13 @@
+<div class="exp-card">
+  <div class="exp-img">
+    <img [src]="exp.urlImage">
+  </div>
+  <div class="exp-txt">
+    <h1>{{ exp.titre }}</h1>
+    <h3>{{ exp.entreprise }} - {{ exp.duree }}</h3>
+    <div *ngIf="exp.support">
+      <p>Support: {{ exp.support }}</p>
+    </div>
+    <p [innerHTML]="exp.description"></p>
+  </div>
+</div>
