@@ -1,1 +1,31 @@
-<p>biographie works!</p>
+
+<div class="card-bio">
+    <h2 class="card-titre">Ma bio en quelques mots ...</h2>
+<div class="card-bottom">
+    <div>
+        <img class="logo-perso" src="../../assets/moi.png" alt="">
+    </div>
+    <div class="card-desc">
+        <h3>{{ titre }}</h3>
+        <p>Je m'appelle {{ prenom }} {{nom }}, j'ai {{ age }} ans, je suis développeur web</p>
+        <p [innerHTML]="description"></p>
+        <h3>Mes réseaux </h3>
+        <div class="car-reseaux">
+            <div>
+                <a [href]="github" target="_blank" rel="noopener noreferrer">
+                    <img class="logo-icons" src="../../assets/github.png" alt="githubIcons">
+                </a>
+            </div>
+            <div>
+                <a [href]="linkedin" target="_blank" rel="noopener noreferrer">
+                    <img class="logo-icons" src="../../assets/linkedin.png" alt="linkedinIcons">
+                </a>
+            </div>    
+        </div>
+    </div>
+</div>
+
+</div>
+
+
+
