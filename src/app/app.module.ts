@@ -7,6 +7,7 @@ import { ExperienceListComponent } from './experience-list/experience-list.compo
 import { ExperienceComponent } from './experience/experience.component';
 import { BiographieComponent } from './biographie/biographie.component';
 import { HeaderComponent } from './header/header.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { HeaderComponent } from './header/header.component';
     ExperienceListComponent,
     ExperienceComponent,
     BiographieComponent,
-    HeaderComponent
+    HeaderComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

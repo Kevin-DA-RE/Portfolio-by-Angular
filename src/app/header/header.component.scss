@@ -2,22 +2,32 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    height: 20vh;
-    background-color: beige;
+    height: 15vh;
+    background: rgb(34, 193, 195);
+    background: linear-gradient(19deg, rgb(34, 193, 195) 0%, rgb(25, 129, 162) 68%);
     align-content: space-between;
     align-items: center;
 
-
+    div{
+        display: flex;
+        flex-direction: row;
+    }
     img {
-        width: 10%;
+        width: 20%;
     }
 
     nav {
-        width: 50%;
+        width: 50vw;
         display: flex;
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
-        font-size: 25px;
+        font-size: 30px;
+    }
+
+    a{
+    color: azure;
+    text-decoration: none;
+    
     }
 }
