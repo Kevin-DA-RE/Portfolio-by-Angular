@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Biographie } from '../models/biographie.model';
 
 @Component({
   selector: 'app-biographie',
