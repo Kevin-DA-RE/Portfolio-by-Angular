@@ -13,6 +13,7 @@ export class BiographieComponent {
   prenom!: String;
   age!: Number;
   description!: String;
+  caractere !: string;
   tel!: String;
   mail!: String;
   github!: String;
@@ -25,14 +26,14 @@ export class BiographieComponent {
     this.prenom = "Kévin";
     this.age = 32;
     this.description = `Suite à l'obtention de mon diplome en 2020, ma passion est devenu mon travail. <br>
-    La <span>curiosité</span>, <span>détermination</span>, ainsi que l'<span>envie</span>, sont mes 3 traits de caractères principaux.<br>
-    Je suis quelqu'un de passioné et d'investit dans mon travail et j'aime élargir mes connaissance au quotidien.<br><br>
-    De part mes expériences, j'ai toujours pratiqué le code informatiqeu sous différents formats:<br>
-    Partant d'un script pour définir des trajetcoires d'usinages jusqu'à concevoir des projets mécaniques sous logiciel 3D Catia, l'informatique a toujours une source d'inspirations.<br<
-    Aujourd'hui le fait de concevoir des applications web en utilisation des technologies modernes ainsi que connaitre mon envirronement de travail représente pour moi un moyen d'élargir mon domaine de compétence et de connaissances en la matière.<br>
-    Le fait d'avoir pratiqué sur développement sur d'autres sytème d'exploitation que windows m'a permis de m'ouvrir un peu plus et d'élargir mes zones de compétences.<br>
-    Cela représente pour moi une source enrichissante de connaissances que je m'efforce de mettre en pratique sur mes projets au quotidien afin d'approfondir mes compétences.
+    Durant toutes mes experiences professionnelles, l'informatique a toujours été une source d'inspirations.<br><br>
+    Ayant acquis une première expérience en tant que développeur chez Servius, j'ai su m'adapter à mon envirronnement de travail (Linux, MacOs) tout en développant des fonctionnalités<br>
+    sur une plateforme web de tarification de produits trié par date. Cette application fût développé en VueJs et connecté sur une base de données PostgreSQL par le biai d'un back office en Java.<br>
+    Cette expérience fut enrichissante en matière de développement mais également dans le domaine de serveur car j'ai pratiqué des commandes Unix afin de pouvoir naviguer entre les machines.<br>
+    A partir de là, j'ai continué d'approfondir mes connaissances en créeant des projets web en pratiquant un autre framework: Angular comme ce portfolio.<br>
+    Etant une personne très ouverte, j'aime m'informer au quotidien sur le développement informatique afin de pouvoir mettre en pratique mes connaissances au profit de projets web..
     `;
+    this.caractere = `Curiosité, Déterminé Investit`;
     this.tel = "06 50 06 02 81";
     this.mail = "dare.kevin21000@gmail.com";
     this.github = "https://github.com/Kevin-DA-RE";

@@ -4,9 +4,15 @@
         <img class="logo-perso" src="../../assets/moi.png" alt="">
     </div>
     <div class="card-desc">
-        <h3>{{ titre }}</h3>
+        <h3>Mes traits de caractères</h3>
+        <p [innerHTML]="caractere"></p>
+        <h3>Bio</h3>
+        <p>{{ titre }}</p>
         <p>Je m'appelle {{ prenom }} {{nom }}, j'ai {{ age }} ans, je suis développeur web</p>
         <p [innerHTML]="description"></p>
+        <h3>Mes coordonnées </h3>
+        <p>N° Téléphone: {{ tel }}</p>
+        <p>@: {{ mail }}</p>
         <h3>Mes réseaux </h3>
         <div class="car-reseaux">
             <div>
