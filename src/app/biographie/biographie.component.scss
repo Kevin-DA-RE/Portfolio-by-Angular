@@ -1,5 +1,5 @@
 .card-bio{
-    background: linear-gradient(90deg, rgba(95,95,204,1) 26%, rgba(0,212,255,1) 73%);
+    //background: linear-gradient(90deg, rgba(95,95,204,1) 26%, rgba(0,212,255,1) 73%);
     display: flex;
     flex-wrap: nowrap;
     align-content: center;
@@ -23,7 +23,7 @@
 }
 
 .card-desc{
-    background-color: aliceblue;
+   // background-color: aliceblue;
     margin: 20px;
     width: 75vw;
     height: max-content;

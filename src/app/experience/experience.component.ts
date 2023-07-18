@@ -8,6 +8,6 @@ import { Experience } from '../models/experience.model';
 })
 export class ExperienceComponent {
 
-  @Input() exp!: Experience;
+  @Input() expComp!: Experience;
 
 }
