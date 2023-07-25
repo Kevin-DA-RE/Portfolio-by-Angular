@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnInit} from '@angular/core';
 import { Projet } from '../models/projet.model';
 
 @Component({
@@ -6,6 +6,14 @@ import { Projet } from '../models/projet.model';
   templateUrl: './projet.component.html',
   styleUrls: ['./projet.component.scss']
 })
-export class ProjetComponent {
+export class ProjetComponent implements OnInit {
 @Input() projComp!: Projet;
+
+
+ngOnInit() {
+
+  console.log("depuis le component");
+  console.log(this.projComp);   
+}
+
 }
