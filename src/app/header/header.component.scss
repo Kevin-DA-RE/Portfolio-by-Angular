@@ -1,8 +1,10 @@
+/*
 header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     height: 10vh;
+    padding: 10px;
     align-content: space-between;
     align-items: center;
 
@@ -28,4 +30,11 @@ header {
     text-decoration: none;
     
     }
+   
 }
+*/
+
+.active {
+    color: #666;
+    text-decoration: underline;
+  }

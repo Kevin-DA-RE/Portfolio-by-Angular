@@ -1,13 +1,28 @@
-<header>
-  <div>
-    <img src="../../assets/sphere.webp" alt="" />
-    <h1>Kevin DA RE</h1>
+<nav class="navbar navbar-expand-sm bg-info navbar-light">
+  <div class="container-fluid">
+    <h1 class="col-sm-4">Kevin DA RE</h1>
+    <ul class="navbar-nav col-sm-8 justify-content-around h2">
+      <li class="nav-item">
+        <a
+          class="nav-link active"
+          routerLink=""
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }"
+          >Home</a
+        >
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="experience" routerLinkActive="active">Experience</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="competence" routerLinkActive="active">Compétences</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="projet" routerLinkActive="active">Projets</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="about" routerLinkActive="active">A Propos</a>
+      </li>
+    </ul>
   </div>
-  <nav>
-    <a routerLink="">Home</a>
-    <a routerLink="experience">Experience</a>
-    <a routerLink="competence">Compétences</a>
-    <a routerLink="projet">Projets</a>
-    <a routerLink="about">A Propos</a>
-  </nav>
-</header>
+</nav>

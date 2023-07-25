@@ -33,7 +33,7 @@ export class BiographieComponent {
     A partir de là, j'ai continué d'approfondir mes connaissances en créeant des projets web en pratiquant un autre framework: Angular comme ce portfolio.<br>
     Etant une personne très ouverte, j'aime m'informer au quotidien sur le développement informatique afin de pouvoir mettre en pratique mes connaissances au profit de projets web..
     `;
-    this.caractere = `Curiosité, Déterminé Investit`;
+    this.caractere = `Curiosité, Déterminé, Investit`;
     this.tel = "06 50 06 02 81";
     this.mail = "dare.kevin21000@gmail.com";
     this.github = "https://github.com/Kevin-DA-RE";
