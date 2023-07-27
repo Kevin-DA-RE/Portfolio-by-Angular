@@ -8,7 +8,6 @@ import { dataService } from '../services/data-services';
   styleUrls: ['./projet-list.component.scss']
 })
 export class ProjetListComponent implements OnInit{
-  projet!: Projet[];
   projAngular!: Projet[];
   projVue!: Projet[];
   projPHP!: Projet[];
@@ -19,8 +18,6 @@ export class ProjetListComponent implements OnInit{
   constructor(private projetService: dataService){}
 
   ngOnInit(){
-    this.projet = this.projetService.getAllProjetService();
-
     this.projAngular = this.projetService.getAllProjetByAngular();
     this.projVue = this.projetService.getAllProjetByVue();
     this.projPHP = this.projetService.getAllProjetByPHP();
