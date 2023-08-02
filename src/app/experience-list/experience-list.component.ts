@@ -9,7 +9,7 @@ import { dataService } from '../services/data-services';
 })
 
 export class ExperienceListComponent implements OnInit{
-
+  title = "Mes experiences";
   experience!: Experience[];
   constructor(private experienceService: dataService){}
 

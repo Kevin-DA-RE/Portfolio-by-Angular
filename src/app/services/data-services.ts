@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { Experience } from '../models/experience.model';
 import { Projet } from '../models/projet.model';
 import { Biographie } from '../models/bio.model';
+import { Formation } from '../models/formation-model';
 
 @Injectable({
   providedIn: 'root',
@@ -94,6 +95,39 @@ export class dataService {
       getAllExperienceService(): Experience[] {
         return this.experience;
       }
+
+    // Listing Formations
+
+    formation: Formation[] =[
+      {
+        id: 1,
+        nom: "Titre Professionnel Concepteur Développeur d'Applications",
+        location: "Lycée Le Castel - Dijon",
+        date: "2020"
+      },
+      {
+        id: 2,
+        nom: "BTS Industrialisation des Produits Mecaniques",
+        location: "Lycée des Métiers Jean CLaude Aubry - Bourgoin Jallieu",
+        date: "2013"
+      },
+      {
+        id: 3,
+        nom: "BAC Professionnel Technicien d'Usinage",
+        location: "Lycée Privé Saint Joseph - Dijon",
+        date: "2011"
+      },
+      {
+        id: 4,
+        nom: "BEP Métiers de Production sur Machines Informatisées",
+        location: "Lycée Privé Saint Joseph - Dijon",
+        date: "2009"
+      }
+    ];
+
+    getAllformation(): Formation[]{
+      return this.formation;
+    }
 
     // Listing des projets
       projet: Projet[] =[

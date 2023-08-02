@@ -1,13 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
-body{
+
+@import "bootstrap-icons/font/bootstrap-icons.min.css";
+@import "primeng/resources/themes/lara-light-blue/theme.css";
+@import "primeng/resources/primeng.css";
+/*body{
     margin: 0;
     padding: 0;
     background: rgb(34,193,195);
     background: linear-gradient(180deg, rgba(34,193,195,0.5130427170868348) 0%, rgba(45,253,219,0.6446953781512605) 100%);
 }
+*/
 
-header {
+.logo-icons{
+    width: 50px;
 }
 
-#bio, #exp-list, #competence, #proj-list {
+body {
+    font-family: var(--font-family);
 }

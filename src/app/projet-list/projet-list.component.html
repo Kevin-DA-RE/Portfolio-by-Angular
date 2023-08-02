@@ -1,11 +1,13 @@
 <!--<app-projet *ngFor="let proj of projet" [projComp]="proj"></app-projet>-->
 <div id="proj-list">
-    <h1>Projet Angular</h1>
+
+    <h1>{{title}}</h1>
+    <h1>Angular</h1>
     <app-projet *ngFor="let proj of projAngular" [projComp]="proj"></app-projet>
-    <h1>Projet Vue Js</h1>
+    <h1>Vue Js</h1>
     <app-projet *ngFor="let proj of projVue" [projComp]="proj"></app-projet>
-    <h1>Projet PHP</h1>
+    <h1>PHP</h1>
     <app-projet *ngFor="let proj of projPHP" [projComp]="proj"></app-projet>
-    <h1>Projet React</h1>
+    <h1>React</h1>
     <app-projet *ngFor="let proj of projReact" [projComp]="proj"></app-projet>
 </div>

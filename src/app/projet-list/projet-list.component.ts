@@ -16,7 +16,7 @@ export class ProjetListComponent implements OnInit{
   
 
   constructor(private projetService: dataService){}
-
+  title = "Mes Projets"
   ngOnInit(){
     this.projAngular = this.projetService.getAllProjetByAngular();
     this.projVue = this.projetService.getAllProjetByVue();

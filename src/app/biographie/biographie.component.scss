@@ -1,44 +1,12 @@
-.card-bio{
-    //background: linear-gradient(90deg, rgba(95,95,204,1) 26%, rgba(0,212,255,1) 73%);
-    display: flex;
-    flex-wrap: nowrap;
-    align-content: center;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    height: 90vh;
-
-}
-
-.card-titre{
-    padding: 20px 300px 0 300px;
-    margin: 0;
-    color: aliceblue;
-}
 
 
 .logo-perso{
-    height: 50vh;
+    width: 300px;
     border-radius: 100vh;
 }
 
-.card-desc{
-   // background-color: aliceblue;
-    margin: 20px;
-    width: 75vw;
-    height: max-content;
-    border-radius: 20px;
-    padding: 20px;
-    font-size: unset;
-    box-shadow: black 4px 4px 20px;
-}
+
 
 .car-reseaux{
     width: 150px;
-    display: flex;
-    justify-content: space-around;
-}
-
-.logo-icons{
-    width: 50px;
 }

@@ -7,10 +7,15 @@ import { ExperienceListComponent } from './experience-list/experience-list.compo
 import { ExperienceComponent } from './experience/experience.component';
 import { BiographieComponent } from './biographie/biographie.component';
 import { HeaderComponent } from './header/header.component';
-import { HomeComponent } from './home/home.component';
 import { CompetenceComponent } from './competence/competence.component';
 import { ProjetComponent } from './projet/projet.component';
 import { ProjetListComponent } from './projet-list/projet-list.component';
+import { FormationListComponent } from './formation-list/formation-list.component';
+import { FormationComponent } from './formation/formation.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+// Import PrimeNG
+import { TimelineModule } from 'primeng/timeline';
 
 @NgModule({
   declarations: [
@@ -19,14 +24,17 @@ import { ProjetListComponent } from './projet-list/projet-list.component';
     ExperienceComponent,
     BiographieComponent,
     HeaderComponent,
-    HomeComponent,
     CompetenceComponent,
     ProjetComponent,
-    ProjetListComponent
+    ProjetListComponent,
+    FormationListComponent,
+    FormationComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    TimelineModule
   ],
   providers: [],
   bootstrap: [AppComponent]
