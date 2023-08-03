@@ -9,5 +9,5 @@ import { Experience } from '../models/experience.model';
 export class ExperienceComponent {
 
   @Input() expComp!: Experience;
-
+  
 }
