@@ -1,10 +1,19 @@
-<h5>{{formComp.nom}}</h5>
-<p>{{formComp.location}}</p>
 
-<!--
-<p-timeline [value]="events" class="w-full md:w-20rem" align="alternate">
-    <ng-template pTemplate="content" let-event>
-        {{ event.status }}
-    </ng-template>
-</p-timeline>
--->
+<div id="form-list">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2>{{title}}</h2>
+               
+                <p-timeline [value]="formation" class="w-full md:w-20rem" align="alternate">
+                        <ng-template pTemplate="content" let-form>
+                        <p>{{ form.date }}</p>
+                        <h5>{{ form.nom }}</h5>
+                        <p>{{ form.location }}</p>
+                        </ng-template>
+                </p-timeline>
+          
+                </div>
+            </div>
+        </div>
+</div>

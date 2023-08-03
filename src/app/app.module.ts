@@ -10,7 +10,6 @@ import { HeaderComponent } from './header/header.component';
 import { CompetenceComponent } from './competence/competence.component';
 import { ProjetComponent } from './projet/projet.component';
 import { ProjetListComponent } from './projet-list/projet-list.component';
-import { FormationListComponent } from './formation-list/formation-list.component';
 import { FormationComponent } from './formation/formation.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
@@ -27,7 +26,6 @@ import { TimelineModule } from 'primeng/timeline';
     CompetenceComponent,
     ProjetComponent,
     ProjetListComponent,
-    FormationListComponent,
     FormationComponent
   ],
   imports: [

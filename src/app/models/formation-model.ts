@@ -1,6 +1,7 @@
 export class Formation {
-    id!: number;
+    id?: number;
     nom!: string;
-    location !: string;
-    date !: string
+    location ?: string;
+    date !: string;
+    color?: string;
 }

@@ -1,8 +1,9 @@
 <div id="experience">
-  <div class="container bg-info">
+  <div class="container">
     <div class="exp-card">
       <h1>{{ expComp.titre }}</h1>
-      <h3>{{ expComp.entreprise }} - {{ expComp.duree }}</h3>
+      <h3>{{ expComp.entreprise }}</h3>
+      <h5>{{ expComp.duree }}</h5>
       <div *ngIf="expComp.support">
         <p>Support: {{ expComp.support }}</p>
       </div>

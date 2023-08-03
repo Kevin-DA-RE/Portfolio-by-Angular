@@ -2,32 +2,31 @@
 <div id="bio">
     <div class="container">
         <div class="row">
-            <div class="col-12 col-md-4">
+            <div class="col-12 col-sm-4">
                     <img class="logo-perso" src="../../assets/moi.png" alt="">
             </div>
-            <div class="col-12 col-md-6 card-title">
-                <h1>Ma bio en quelques mots</h1>
-            <h5 [innerHTML]="bio.caractere"></h5><br>
-            <p>{{ bio.titre }}</p>
-            <p>Je m'appelle {{ bio.prenom }} {{bio.nom }}, j'ai {{ bio.age }} ans, je suis développeur web</p>
-            <p [innerHTML]="bio.description"></p>
-            <div class="col">
-                <h3>Mes coordonnées </h3>
-            <p>N° Téléphone: {{ bio.tel }}</p>
-            <p>@: {{ bio.mail }}</p>
-                <h3>Mes réseaux </h3>
-                <div class="car-reseaux d-flex justify-content-between">
-                    <div>
-                        <a [href]="bio.github" target="_blank" rel="noopener noreferrer">
-                            <img class="logo-icons" src="../../assets/github.png" alt="githubIcons">
-                        </a>
+            <div class="col-12 col-sm-6 card-title">
+                        <h1>Ma bio en quelques mots</h1>
+                    <h5 [innerHTML]="bio.caractere"></h5><br>
+                    <p>{{ bio.titre }}</p>
+                    <p>Je m'appelle {{ bio.prenom }} {{bio.nom }}, j'ai {{ bio.age }} ans, je suis développeur web</p>
+                    <p [innerHTML]="bio.description"></p>
+                        <h3>Mes coordonnées </h3>
+                    <p>N° Téléphone: {{ bio.tel }}</p>
+                    <p>@: {{ bio.mail }}</p>
+                        <h3>Mes réseaux </h3>
+                    <div class="car-reseaux d-flex justify-content-between">
+                        <div>
+                            <a [href]="bio.github" target="_blank" rel="noopener noreferrer">
+                                <img class="logo-icons" src="../../assets/github.png" alt="githubIcons">
+                            </a>
+                        </div>
+                        <div>
+                            <a [href]="bio.linkedin" target="_blank" rel="noopener noreferrer">
+                                <img class="logo-icons" src="../../assets/linkedin.png" alt="linkedinIcons">
+                            </a>
+                        </div>    
                     </div>
-                    <div>
-                        <a [href]="bio.linkedin" target="_blank" rel="noopener noreferrer">
-                            <img class="logo-icons" src="../../assets/linkedin.png" alt="linkedinIcons">
-                        </a>
-                    </div>    
-                </div>
             </div>
         </div>
     </div>
