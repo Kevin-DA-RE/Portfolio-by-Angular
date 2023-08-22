@@ -11,8 +11,6 @@ export class FormationComponent implements OnInit{
 
 title = "Mes Formations";
 
-smallScreen : true | undefined;
-
 formation!: Formation[];
 constructor(private formationService: dataService){}
 

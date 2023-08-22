@@ -3,6 +3,7 @@ import { Experience } from '../models/experience.model';
 import { Projet } from '../models/projet.model';
 import { Biographie } from '../models/bio.model';
 import { Formation } from '../models/formation-model';
+import { Skills } from '../models/skills';
 
 @Injectable({
   providedIn: 'root',
@@ -16,11 +17,11 @@ export class dataService {
         32,
         `Suite à l'obtention de mon diplome en 2020, ma passion est devenu mon travail. <br>
         Durant toutes mes experiences professionnelles, l'informatique a toujours été une source d'inspirations.<br><br>
-        Ayant acquis une première expérience en tant que développeur chez Servius, j'ai su m'adapter à mon envirronnement de travail (Linux, MacOs) tout en développant des fonctionnalités<br>
-        sur une plateforme web de tarification de produits trié par date. Cette application fût développé en VueJs et connecté sur une base de données PostgreSQL par le biai d'un back office en Java.<br>
+        Ayant acquis une première expérience en tant que développeur chez Servius, j'ai su m'adapter à mon envirronnement de travail (Linux, MacOs) tout en développant des fonctionnalités
+        sur une plateforme web de tarification de produits trié par date.<br> Cette application fût développé en <span>VueJs</span> et connecté sur une base de données PostgreSQL par le biai d'un back office en Java.<br>
         Cette expérience fut enrichissante en matière de développement mais également dans le domaine de serveur car j'ai pratiqué des commandes Unix afin de pouvoir naviguer entre les machines.<br>
         A partir de là, j'ai continué d'approfondir mes connaissances en créeant des projets web en pratiquant un autre framework: Angular comme ce portfolio.<br>
-        Etant une personne très ouverte, j'aime m'informer au quotidien sur le développement informatique afin de pouvoir mettre en pratique mes connaissances au profit de projets web..
+        Etant une personne très ouverte, je m'informe au quotidien sur le développement informatique afin de pouvoir mettre en pratique mes connaissances au profit de projets web.
         `,
         `Curiosité, Déterminé, Investit`,
         "06 50 06 02 81",
@@ -42,10 +43,8 @@ export class dataService {
           duree: '18 mois',
           description: `Intégration script pour application web de CallCenter<br>
         Analyse données en base et échange avec client via outils de ticketing.<br>
-        J'ai conçus des projets web sous forme de scripts suivant le besoin client.<br>
-        J'ai développé différentes fonctionnalité ayant pour but de pouvoir envoyer des e-mails et sms<br>
-        suivant le type de réponse client.
-        A travers le support, j'ai apporté de l'expertise métier et différentes informations concernant le bon fonctionnement de plateforme web.
+        Conception de projet Web sous forme de script avec fonctionnalités d'envoi E-mail et SMS<br>
+        Aide et assistance au support téléphonique pour accompagner le client.
         `,
           support: 'Plateforme CallCenter Hermès',
           urlImage: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcP02ckPJGdHmLqVXv9NK9Z2Uf-Q04Lv3QXt5TzG2zykZr7EAfYMf_M571HfT6vlwy93Y&usqp=CAU"
@@ -57,12 +56,11 @@ export class dataService {
           entreprise: 'Servius',
           duree: '3 mois',
           description: `Développement application web sur les tarifications des produits par date.<br>
-        A partir du besoin client, j'ai développé de nouveaux composants ainsi que de nouvelle fonctionnalités pour l'application web.<br>
-        Le but étant de faire afficher des tarifs à partir d'une date et d'une période précise, j'ai su faire preuve de méthodologie ainsi que d'une organisation simple <br>
-        afin de faire afficher ces différentes informations dans les composants prévus à leurs effets.<br>    
-        Durant cet expérience forte enrichissante, j'ai découvert un tout autre environement informatique que windows puisque j'ai appris a développer sous environnement Linux.<br>
-        Au dela du développement, j'ai appris à communiquer entre différents serveurs gràce à la commande Unix <span>ssh</span>, à naviguer à travers les dossiers (<span>ls, cd, pwd</span>), et copier des dossiers via la commande <span>scp</span><br>
-        `,
+          Conception module d'affichage des données de tarifications suivant un processus ordonnées et détaillé.<br>
+          Liaison interface web avec le serveur via module en Java.<br>
+          Découverte d'un nouvel environnement de travail (WebStorm) et d'autres système d'exploitation (MacOs).<br>
+          Navigation entre serveur via commande Unix.<br>
+          `,
           support: 'Front-End: Vue Js Back-End Java',
           urlImage: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcP02ckPJGdHmLqVXv9NK9Z2Uf-Q04Lv3QXt5TzG2zykZr7EAfYMf_M571HfT6vlwy93Y&usqp=CAU"
         },
@@ -71,12 +69,10 @@ export class dataService {
           titre: 'Dessinateur Projeteur',
           entreprise: 'SNAAM, Workshape, Oberthur',
           duree: '4 ans',
-          description: `Création de modèle d'ensemble mécanique en 3D <br> 
-        pour tout type de struture: Automobile, Ferroviaire, Prototype pour aéronautique. <br>
-        A partir d'un cahier des charges, j'ai analysé le besoin le client en relevant les principales caractéristiques techniques du projet mais en tenant comptes des contraintes que devais rencontrer ce dernier.<br>
-        j'ai donc concus des projets mécaniques sur un logiciel de conception 3D <span>CATIA</span><br>
-        J'ai aussi mise en place des plans d'ensembles et de définitions afin d'afficher tous les informations nécessaires à sa conception.<br>
-        Durant toutes ses expériences en tant que dessinateur industriel, j'ai appris à analyser le besoin client et concevoir un projet répondatn à leur demande.`,
+          description: `Création de modèle d'ensemble mécanique en 3D pour tout type de struture: Automobile, Ferroviaire, Prototype pour aéronautique. <br>
+          Analyse cahier des charges et conception projets sur logiciels 3D.<br>
+          Conception et modélisation 3D des projets sur logiciel CATIA.<br>
+          Création de plans techniques pour la réalisations des projets.`,
         urlImage: "https://i.imgur.com/fmJP7gR.jpeg"
         },
         {
@@ -127,6 +123,19 @@ export class dataService {
 
     getAllformation(): Formation[]{
       return this.formation;
+    }
+    // Listing des competences
+
+    skills : Skills[]= [
+      {
+        id: 1,
+        titre: "Angular",
+        src: "../../assets/angular.png"
+      }
+    ]
+
+    getAllSkills(): Skills[]{
+      return this.skills;
     }
 
     // Listing des projets

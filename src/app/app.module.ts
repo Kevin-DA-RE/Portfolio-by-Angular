@@ -3,7 +3,6 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ExperienceListComponent } from './experience-list/experience-list.component';
 import { ExperienceComponent } from './experience/experience.component';
 import { BiographieComponent } from './biographie/biographie.component';
 import { HeaderComponent } from './header/header.component';
@@ -15,11 +14,12 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 // Import PrimeNG
 import { TimelineModule } from 'primeng/timeline';
+import { FieldsetModule } from 'primeng/fieldset';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    ExperienceListComponent,
     ExperienceComponent,
     BiographieComponent,
     HeaderComponent,
@@ -32,7 +32,8 @@ import { TimelineModule } from 'primeng/timeline';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    TimelineModule
+    TimelineModule,
+    FieldsetModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

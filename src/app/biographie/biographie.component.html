@@ -1,11 +1,11 @@
 
 <div id="bio">
-    <div class="container">
+    <div>
         <div class="row">
-            <div class="col-12 col-sm-4">
-                    <img class="logo-perso" src="../../assets/moi.png" alt="">
+            <div class="col-12 d-flex justify-content-center col-md-4">
+                    <img class="logo-perso img-fluid-w-25" src="../../assets/moi.png" alt="logo-perso">
             </div>
-            <div class="col-12 col-sm-6 card-title">
+            <div class="col-12 col-md-6 card-title">
                         <h1>Ma bio en quelques mots</h1>
                     <h5 [innerHTML]="bio.caractere"></h5><br>
                     <p>{{ bio.titre }}</p>
@@ -15,7 +15,7 @@
                     <p>N° Téléphone: {{ bio.tel }}</p>
                     <p>@: {{ bio.mail }}</p>
                         <h3>Mes réseaux </h3>
-                    <div class="car-reseaux d-flex justify-content-between">
+                    <div class="car-reseaux d-flex justify-content-around">
                         <div>
                             <a [href]="bio.github" target="_blank" rel="noopener noreferrer">
                                 <img class="logo-icons" src="../../assets/github.png" alt="githubIcons">

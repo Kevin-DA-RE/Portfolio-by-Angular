@@ -1,13 +1,20 @@
-import { Component, Input } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Experience } from '../models/experience.model';
+import { dataService } from '../services/data-services';
 
 @Component({
   selector: 'app-experience',
   templateUrl: './experience.component.html',
   styleUrls: ['./experience.component.scss']
 })
-export class ExperienceComponent {
+export class ExperienceComponent implements OnInit{
 
-  @Input() expComp!: Experience;
+  title = "Mes experiences";
+  experience!: Experience[];
+  constructor(private experienceService: dataService){}
+
+  ngOnInit(){
+    this.experience = this.experienceService.getAllExperienceService()
+  }
   
 }

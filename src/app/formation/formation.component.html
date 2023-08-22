@@ -1,11 +1,6 @@
 
 <div id="form-list">
-    <ng-template  [ngIf]="smallScreen === true" [ngIfElse]="highScreen">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
                     <h2>{{title}}</h2>
-                   
                     <p-timeline [value]="formation" class="w-full md:w-20rem" align="alternate">
                             <ng-template pTemplate="content" let-form>
                             <p>{{ form.date }}</p>
@@ -13,12 +8,4 @@
                             <p>{{ form.location }}</p>
                             </ng-template>
                     </p-timeline>
-              
-                    </div>
-                </div>
-        </div>
-    </ng-template>
-    <ng-template #highScreen>
-        <h1>Grand ecran</h1>
-    </ng-template>
 </div>
