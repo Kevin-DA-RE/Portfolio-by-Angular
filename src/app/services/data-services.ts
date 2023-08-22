@@ -46,9 +46,7 @@ export class dataService {
         Conception de projet Web sous forme de script avec fonctionnalités d'envoi E-mail et SMS<br>
         Aide et assistance au support téléphonique pour accompagner le client.
         `,
-          support: 'Plateforme CallCenter Hermès',
-          urlImage: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcP02ckPJGdHmLqVXv9NK9Z2Uf-Q04Lv3QXt5TzG2zykZr7EAfYMf_M571HfT6vlwy93Y&usqp=CAU"
-          
+          support: 'Plateforme CallCenter Hermès' 
         },
         {
             id: 2,
@@ -61,8 +59,7 @@ export class dataService {
           Découverte d'un nouvel environnement de travail (WebStorm) et d'autres système d'exploitation (MacOs).<br>
           Navigation entre serveur via commande Unix.<br>
           `,
-          support: 'Front-End: Vue Js Back-End Java',
-          urlImage: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcP02ckPJGdHmLqVXv9NK9Z2Uf-Q04Lv3QXt5TzG2zykZr7EAfYMf_M571HfT6vlwy93Y&usqp=CAU"
+          support: 'Front-End: Vue Js Back-End Java'
         },
         {
             id: 3,
@@ -72,8 +69,7 @@ export class dataService {
           description: `Création de modèle d'ensemble mécanique en 3D pour tout type de struture: Automobile, Ferroviaire, Prototype pour aéronautique. <br>
           Analyse cahier des charges et conception projets sur logiciels 3D.<br>
           Conception et modélisation 3D des projets sur logiciel CATIA.<br>
-          Création de plans techniques pour la réalisations des projets.`,
-        urlImage: "https://i.imgur.com/fmJP7gR.jpeg"
+          Création de plans techniques pour la réalisations des projets.`
         },
         {
             id: 4,
@@ -84,7 +80,6 @@ export class dataService {
         Suite à  l'obtention de mon BTS en industrie mécanique, j'ai exercé sur différentes missions intérim le poste d'opérateur commande numérique.<br>
         A l'aide de différents outils mis à disposition, j'ai fabriqué tout types de pièces mécanique servant à être mise en place dans des ensemble mécanique`,
     
-        urlImage: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkOz3PCcuEAgFGuThVnCqfPMoyWq5WYGXx_5FOa_6lUNtuVa0A-C_RwC2FpI4UkGM82IQ&usqp=CAU"
         },
       ];
     

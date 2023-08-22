@@ -5,5 +5,4 @@ export class Experience {
     description!: string;
     duree!: string;
     support?: string;
-    urlImage?: string;
   }
