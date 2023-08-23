@@ -1,0 +1,15 @@
+<div id="competence">
+      <h2>{{title}}</h2>
+         <h3>Frameworks</h3>
+            <div class="d-flex justify-content-between align-items-baseline w-50">
+                <app-competence *ngFor="let skill of skillFramework" [skillComp]="skill"></app-competence>
+            </div>       
+            <h3>Langages Web</h3>
+            <div class="d-flex justify-content-between align-items-baseline w-25">
+                <app-competence *ngFor="let skill of skillLangage" [skillComp]="skill"></app-competence>
+            </div>
+            <h3>IDE / Os / Logiciels</h3>
+            <div class="d-flex justify-content-between align-items-baseline w-100">
+                <app-competence *ngFor="let skill of skillOther" [skillComp]="skill"></app-competence>
+            </div>
+</div>

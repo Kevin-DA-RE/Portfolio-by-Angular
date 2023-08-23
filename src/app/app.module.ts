@@ -15,6 +15,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 // Import PrimeNG
 import { TimelineModule } from 'primeng/timeline';
 import { FieldsetModule } from 'primeng/fieldset';
+import { CompetenceListComponent } from './competence-list/competence-list.component';
 
 
 @NgModule({
@@ -26,7 +27,8 @@ import { FieldsetModule } from 'primeng/fieldset';
     CompetenceComponent,
     ProjetComponent,
     ProjetListComponent,
-    FormationComponent
+    FormationComponent,
+    CompetenceListComponent
   ],
   imports: [
     BrowserModule,

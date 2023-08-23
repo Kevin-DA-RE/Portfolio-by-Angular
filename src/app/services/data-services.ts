@@ -3,7 +3,7 @@ import { Experience } from '../models/experience.model';
 import { Projet } from '../models/projet.model';
 import { Biographie } from '../models/bio.model';
 import { Formation } from '../models/formation-model';
-import { Skills } from '../models/skills';
+import { Skill } from '../models/skill';
 
 @Injectable({
   providedIn: 'root',
@@ -121,17 +121,89 @@ export class dataService {
     }
     // Listing des competences
 
-    skills : Skills[]= [
+    skills : Skill[]= [
       {
         id: 1,
         titre: "Angular",
-        src: "../../assets/angular.png"
+        src: "../../assets/angular.png",
+        type: 'framework'
+      },
+      {
+        id: 2,
+        titre: "VueJs",
+        src: "../../assets/vuejs.png",
+        type: 'framework'
+      },
+      {
+        id: 3,
+        titre: "NodeJs",
+        src: "../../assets/node.png",
+        type: 'framework'
+      },
+      {
+        id: 4,
+        titre: "SQL",
+        src: "../../assets/sql.png",
+        type: 'langage'
+      },
+      {
+        id: 5,
+        titre: "VS Code",
+        src: "../../assets/vscode.png",
+        type: 'other'
+      },
+      {
+        id: 6,
+        titre: "Postman",
+        src: "../../assets/postman.png",
+        type: 'other'
+      },
+      {
+        id: 7,
+        titre: "MacOs",
+        src: "../../assets/macos.png",
+        type: 'other'
+      },
+      {
+        id: 8,
+        titre: "Linux",
+        src: "../../assets/linux.png",
+        type: 'other'
+      },
+      {
+        id: 9,
+        titre: "GitHub",
+        src: "../../assets/github.png",
+        type: 'other'
+      },
+      {
+        id: 10,
+        titre: "WebStorm",
+        src: "../../assets/webstorm.png",
+        type: 'other'
       }
+
     ]
 
-    getAllSkills(): Skills[]{
-      return this.skills;
+    getSkillFramework(): Skill[]{
+      const filt = this.skills.filter((skill) => 
+      skill.type === "framework"
+    )
+        return filt;    
     }
+    getSkillLangage(): Skill[]{
+      const filt = this.skills.filter((skill) => 
+      skill.type === "langage"
+    )
+        return filt;    
+    }
+    getSkillOther(): Skill[]{
+      const filt = this.skills.filter((skill) => 
+      skill.type === "other"
+    )
+        return filt;    
+    }
+
 
     // Listing des projets
       projet: Projet[] =[

@@ -1,19 +1,14 @@
-import { Component, OnInit} from '@angular/core';
-import { dataService } from '../services/data-services';
-import { Skills } from '../models/skills';
+import { Component, Input} from '@angular/core';
+import { Skill } from '../models/skill';
 
 @Component({
   selector: 'app-competence',
   templateUrl: './competence.component.html',
   styleUrls: ['./competence.component.scss']
 })
-export class CompetenceComponent implements OnInit{
+export class CompetenceComponent {
+ 
   title = "Mes Competences";
-  skill !: Skills[];
 
-  constructor(private skills: dataService){}
-
-  ngOnInit() {
-    this.skill = this.skills.getAllSkills();
-  }
+  @Input() skillComp !: Skill 
 }
