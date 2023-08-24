@@ -10,12 +10,13 @@ import { CompetenceComponent } from './competence/competence.component';
 import { ProjetComponent } from './projet/projet.component';
 import { ProjetListComponent } from './projet-list/projet-list.component';
 import { FormationComponent } from './formation/formation.component';
+import { CompetenceListComponent } from './competence-list/competence-list.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 // Import PrimeNG
 import { TimelineModule } from 'primeng/timeline';
 import { FieldsetModule } from 'primeng/fieldset';
-import { CompetenceListComponent } from './competence-list/competence-list.component';
+
 
 
 @NgModule({
