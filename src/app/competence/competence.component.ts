@@ -7,8 +7,6 @@ import { Skill } from '../models/skill';
   styleUrls: ['./competence.component.scss']
 })
 export class CompetenceComponent {
- 
-  title = "Mes Competences";
 
   @Input() skillComp !: Skill 
 }

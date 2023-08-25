@@ -1,18 +1,16 @@
 <div id="experience">
-  <div class="">
-    <h1>{{ title }}</h1>
+    <h2 class="mb-5">{{ title }}</h2>
     <p-timeline [value]="experience">
       <ng-template pTemplate="content" let-exp>
         {{ exp.duree }}
       </ng-template>
       <ng-template pTemplate="opposite" let-exp>
-        <h1>{{ exp.titre }}</h1>
-        <h3>{{ exp.entreprise }}</h3>
+        <h3>{{ exp.titre }}</h3>
+        <h4>{{ exp.entreprise }}</h4>
         <div *ngIf="exp.support">
-          <p>Support: {{ exp.support }}</p>
+          <h6 [ngStyle]="{'text-decoration': 'underline'}">Support: {{ exp.support }}</h6>
         </div>
         <p [innerHTML]="exp.description"></p>
       </ng-template>
     </p-timeline>
   </div>
-</div>

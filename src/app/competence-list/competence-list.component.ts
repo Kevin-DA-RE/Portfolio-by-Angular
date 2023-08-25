@@ -8,17 +8,15 @@ import { dataService } from '../services/data-services';
   styleUrls: ['./competence-list.component.scss']
 })
 export class CompetenceListComponent implements OnInit{
-  skillFramework !: Skill[];
-  skillLangage !: Skill[];
-  skillOther !: Skill[];
+
+  skill !: Skill[];
 
 
   constructor(private skills: dataService){}
   title = "Mes compétences"
 
   ngOnInit() {
-    this.skillFramework = this.skills.getSkillFramework();
-    this.skillLangage = this.skills.getSkillLangage();
-    this.skillOther = this.skills.getSkillOther();
+    this.skill = this.skills.getAllSKill();
+
   }
 }

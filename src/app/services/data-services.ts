@@ -59,7 +59,7 @@ export class dataService {
           Découverte d'un nouvel environnement de travail (WebStorm) et d'autres système d'exploitation (MacOs).<br>
           Navigation entre serveur via commande Unix.<br>
           `,
-          support: 'Front-End: Vue Js Back-End Java'
+          support: 'Front-End: Vue Js / Back-End Java'
         },
         {
             id: 3,
@@ -94,7 +94,7 @@ export class dataService {
         id: 1,
         nom: "Titre Professionnel Concepteur Développeur d'Applications",
         location: "Lycée Le Castel - Dijon",
-        date: "2020"
+        date: "2021"
       },
       {
         id: 2,
@@ -119,90 +119,64 @@ export class dataService {
     getAllformation(): Formation[]{
       return this.formation;
     }
+
+
+
     // Listing des competences
 
-    skills : Skill[]= [
+    skill : Skill[]= [
       {
         id: 1,
         titre: "Angular",
-        src: "../../assets/angular.png",
-        type: 'framework'
+        src: "../../assets/angular.png"
       },
       {
         id: 2,
         titre: "VueJs",
-        src: "../../assets/vuejs.png",
-        type: 'framework'
+        src: "../../assets/vuejs.png"
       },
       {
         id: 3,
-        titre: "NodeJs",
-        src: "../../assets/node.png",
-        type: 'framework'
+        titre: "SQL",
+        src: "../../assets/sql.png"
       },
       {
         id: 4,
-        titre: "SQL",
-        src: "../../assets/sql.png",
-        type: 'langage'
+        titre: "VS Code",
+        src: "../../assets/vscode.png"
       },
       {
         id: 5,
-        titre: "VS Code",
-        src: "../../assets/vscode.png",
-        type: 'other'
+        titre: "Postman",
+        src: "../../assets/postman.png"
       },
       {
         id: 6,
-        titre: "Postman",
-        src: "../../assets/postman.png",
-        type: 'other'
+        titre: "MacOs",
+        src: "../../assets/macos.png"
       },
       {
         id: 7,
-        titre: "MacOs",
-        src: "../../assets/macos.png",
-        type: 'other'
+        titre: "Linux",
+        src: "../../assets/linux.png"
       },
       {
         id: 8,
-        titre: "Linux",
-        src: "../../assets/linux.png",
-        type: 'other'
+        titre: "GitHub",
+        src: "../../assets/github.png"
       },
       {
         id: 9,
-        titre: "GitHub",
-        src: "../../assets/github.png",
-        type: 'other'
-      },
-      {
-        id: 10,
         titre: "WebStorm",
-        src: "../../assets/webstorm.png",
-        type: 'other'
+        src: "../../assets/webstorm.png"
       }
 
     ]
 
-    getSkillFramework(): Skill[]{
-      const filt = this.skills.filter((skill) => 
-      skill.type === "framework"
-    )
-        return filt;    
+    getAllSKill(): Skill [] {
+      return this.skill;
     }
-    getSkillLangage(): Skill[]{
-      const filt = this.skills.filter((skill) => 
-      skill.type === "langage"
-    )
-        return filt;    
-    }
-    getSkillOther(): Skill[]{
-      const filt = this.skills.filter((skill) => 
-      skill.type === "other"
-    )
-        return filt;    
-    }
+
 
 
     // Listing des projets

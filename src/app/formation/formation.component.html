@@ -1,11 +1,11 @@
 
 <div id="form-list">
-                    <h2>{{title}}</h2>
-                    <p-timeline [value]="formation" class="w-full md:w-20rem" align="alternate">
-                            <ng-template pTemplate="content" let-form>
-                            <p>{{ form.date }}</p>
-                            <h5>{{ form.nom }}</h5>
-                            <p>{{ form.location }}</p>
-                            </ng-template>
-                    </p-timeline>
+        <h2 class="mb-5">{{title}}</h2>
+        <p-timeline [value]="formation" class="w-full md:w-20rem" align="alternate">
+                <ng-template pTemplate="content" let-form>
+                <p>{{ form.date }}</p>
+                <h5>{{ form.nom }}</h5>
+                <p>{{ form.location }}</p>
+                </ng-template>
+        </p-timeline>
 </div>
