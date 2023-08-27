@@ -192,34 +192,7 @@ export class dataService {
             descriptif: `Projet concu pour la mise en place des planings des formateurs Greta suivant leurs localisation.<br>
             Cette application permet de visualiser les status des formateurs et de leurs disponibilités suivant leurs horaires prédifinis.`,
             technologie: "PHP"
-        },
-        {
-            id: 5,
-            nom: "Biblioteque Multi-Medias",
-            descriptif: `Projet réalisé en React dans le but d'afficher des médias audio et vidéos sur un application web.`,
-            technologie: "React"
-        },
-        {
-            id: 6,
-            nom: "Jeu de Morpion",
-            descriptif: `Jeux de plateau constistant à affronter deux joueurs et à déterminer qui gagnera la partie.<br>
-            Jeu disposant d'un compte tour, d'un historique dans lequel le joueur peut revenir à un tour spécifique pour modifier son choix et d'un système indiquant quel joueur a gagné la partie.`,
-            technologie: "React"
-        },
-        {
-            id: 7,
-            nom: "Referentiel Suivi Activité Metier (SAM)",
-            descriptif: `API servant à recueillir les informations depuis un réfentiel distant pour alimenter la plateforme de CallCenter.<br>
-            A partir d'un appel API via le module Axios, nous envoyons une requête avec un middleware spécifique afin de pouvoir recevoir les données et de les retransmettre à la plateforme dédiée.`,
-            technologie: "NodeJs"
-        },
-        {
-            id: 8,
-            nom: "Listing Produits",
-            descriptif: `API recueillant les objets enregistrés sur une base NoSQL MongoDB.<br>
-            Ce projet permet à l'utilisateur de pouvoir visionner, enregistrer, modifier ou encore supprimer un objet de la collection sous authentification de l'utilisateur.`,
-            technologie: "NodeJs"
-        },
+        }
     ];
 
     

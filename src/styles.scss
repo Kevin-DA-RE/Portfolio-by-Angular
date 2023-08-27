@@ -1,6 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 
 @import "bootstrap-icons/font/bootstrap-icons.min.css";
+@import "~bootstrap-icons/font/bootstrap-icons.css";
 
 #section{
     background-image: url("../src/assets/bg.jpg");
@@ -17,10 +18,25 @@
     
 }
 
+#form-list, #experience, #competence, #proj-list {
+    height: 95vh;
+}
+
+#bio{
+    height: 110vh
+}
+
 .logo-icons{
     width: 50px;
 }
 
+.logo-projet{
+    width: 80px;
+}
+
+.component{
+    margin-top: 10vh;
+}
 
 #exp {
     height: 80vh;

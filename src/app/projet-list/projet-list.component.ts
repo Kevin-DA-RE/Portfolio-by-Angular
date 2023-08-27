@@ -11,7 +11,6 @@ export class ProjetListComponent implements OnInit{
   projAngular!: Projet[];
   projVue!: Projet[];
   projPHP!: Projet[];
-  projReact!: Projet[];
 
   
 
@@ -21,7 +20,6 @@ export class ProjetListComponent implements OnInit{
     this.projAngular = this.projetService.getAllProjetByAngular();
     this.projVue = this.projetService.getAllProjetByVue();
     this.projPHP = this.projetService.getAllProjetByPHP();
-    this.projReact = this.projetService.getAllProjetByReact();
   }
   
 }

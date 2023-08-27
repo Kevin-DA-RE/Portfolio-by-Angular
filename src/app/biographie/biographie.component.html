@@ -1,7 +1,7 @@
 
 <div id="bio">
         <div class="row">
-            <div class="col-12 mb-5 col-md-6 d-flex flex-column align-self-center">
+            <div class="col-12  mb-5 col-md-6 d-flex flex-column align-self-center">
                 <div class="d-flex flex-column my-auto align-items-center">
                         <img class="logo-perso img-fluid-w-25" src="../../assets/moi.png" alt="logo-perso">
                         <h3>Mes coordonnées </h3>
@@ -28,7 +28,7 @@
                         <h5 [innerHTML]="bio.caractere"></h5><br>
                         <p>{{ bio.titre }}</p>
                         <p>Je m'appelle {{ bio.prenom }} {{bio.nom }}, j'ai {{ bio.age }} ans, je suis développeur web</p>
-                        <p id="desc" [innerHTML]="bio.description"></p>
+                        <p [innerHTML]="bio.description"></p>
                 </div>
             </div>
         </div>

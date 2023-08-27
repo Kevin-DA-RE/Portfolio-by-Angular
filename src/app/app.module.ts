@@ -15,8 +15,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 // Import PrimeNG
 import { TimelineModule } from 'primeng/timeline';
-import { FieldsetModule } from 'primeng/fieldset';
-
 
 
 @NgModule({
@@ -36,7 +34,6 @@ import { FieldsetModule } from 'primeng/fieldset';
     AppRoutingModule,
     BrowserAnimationsModule,
     TimelineModule,
-    FieldsetModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
