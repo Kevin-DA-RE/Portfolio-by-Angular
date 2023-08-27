@@ -1,16 +1,19 @@
-<div id="experience">
-    <h2 class="mb-5">{{ title }}</h2>
-    <p-timeline [value]="experience">
-      <ng-template pTemplate="content" let-exp>
-        {{ exp.duree }}
-      </ng-template>
-      <ng-template pTemplate="opposite" let-exp>
-        <h3>{{ exp.titre }}</h3>
-        <h4>{{ exp.entreprise }}</h4>
-        <div *ngIf="exp.support">
-          <h6 [ngStyle]="{'text-decoration': 'underline'}">Support: {{ exp.support }}</h6>
+ <div id="experience">
+        <h2 class="mb-5 banner text-info">{{title}}</h2>
+        <div id="exp">
+          <p-timeline [value]="experience" class="w-full md:w-20rem" align="alternate">
+                <ng-template pTemplate="opposite" let-exp>
+                  {{ exp.duree }}
+                </ng-template>
+                <ng-template pTemplate="content" let-exp>
+                  <h3>{{ exp.titre }}</h3>
+                  <h4>{{ exp.entreprise }}</h4>
+                  <div *ngIf="exp.support">
+                    <h6 [ngStyle]="{'text-decoration': 'underline'}">Support: {{ exp.support }}</h6>
+                  </div>
+                  <p [innerHTML]="exp.description"></p>
+                </ng-template>
+        </p-timeline>
         </div>
-        <p [innerHTML]="exp.description"></p>
-      </ng-template>
-    </p-timeline>
-  </div>
+        
+</div>

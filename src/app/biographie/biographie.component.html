@@ -6,7 +6,7 @@
                         <img class="logo-perso img-fluid-w-25" src="../../assets/moi.png" alt="logo-perso">
                         <h3>Mes coordonnées </h3>
                         <p>N° Téléphone: {{ bio.tel }}</p>
-                        <p>@: {{ bio.mail }}</p>
+                        <p>@: <a href="mailto: dare.kevin21000@gmail.com">{{ bio.mail }}</a></p>
                             <h3>Mes réseaux </h3>
                         <div class="car-reseaux d-flex justify-content-around">
                             <div>
@@ -22,14 +22,13 @@
                         </div>
                 </div>
             </div>
-            <div class="col-12 col-md-6">
+            <div class="col-12 mb-5 col-md-6">
                 <div class=" d-flex flex-column align-items-start text-justify">
                         <h1>Ma bio en quelques mots</h1>
                         <h5 [innerHTML]="bio.caractere"></h5><br>
                         <p>{{ bio.titre }}</p>
                         <p>Je m'appelle {{ bio.prenom }} {{bio.nom }}, j'ai {{ bio.age }} ans, je suis développeur web</p>
-                        <p [innerHTML]="bio.description"></p>
-                        
+                        <p id="desc" [innerHTML]="bio.description"></p>
                 </div>
             </div>
         </div>

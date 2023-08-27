@@ -2,7 +2,27 @@
 
 @import "bootstrap-icons/font/bootstrap-icons.min.css";
 
+#section{
+    background-image: url("../src/assets/bg.jpg");
+    background-size: cover;
+    background-repeat: repeat-y;
+    color: aliceblue;
+}
+
+.banner{
+    background-image: url("./assets/bg-header.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-left: 70px;
+    
+}
+
 .logo-icons{
     width: 50px;
 }
 
+
+#exp {
+    height: 80vh;
+    overflow-y: scroll;
+}

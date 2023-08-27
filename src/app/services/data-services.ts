@@ -141,19 +141,9 @@ export class dataService {
         src: "../../assets/sql.png"
       },
       {
-        id: 4,
-        titre: "VS Code",
-        src: "../../assets/vscode.png"
-      },
-      {
-        id: 5,
-        titre: "Postman",
-        src: "../../assets/postman.png"
-      },
-      {
-        id: 6,
-        titre: "MacOs",
-        src: "../../assets/macos.png"
+        id: 3,
+        titre: "Java",
+        src: "../../assets/java.png"
       },
       {
         id: 7,
@@ -164,13 +154,7 @@ export class dataService {
         id: 8,
         titre: "GitHub",
         src: "../../assets/github.png"
-      },
-      {
-        id: 9,
-        titre: "WebStorm",
-        src: "../../assets/webstorm.png"
       }
-
     ]
 
     getAllSKill(): Skill [] {
