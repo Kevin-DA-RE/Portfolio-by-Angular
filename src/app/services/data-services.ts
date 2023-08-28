@@ -40,7 +40,7 @@ export class dataService {
           id: 1,
           titre: 'Developpeur intégrateur Web',
           entreprise: 'Fimainfo',
-          duree: '18 mois',
+          duree: "Aujourd'hui",
           description: `Intégration script pour application web de CallCenter<br>
         Analyse données en base et échange avec client via outils de ticketing.<br>
         Conception de projet Web sous forme de script avec fonctionnalités d'envoi E-mail et SMS<br>
@@ -128,32 +128,32 @@ export class dataService {
       {
         id: 1,
         titre: "Angular",
-        src: "../../assets/angular.png"
+        src: "../../assets/cmp/angular.png"
       },
       {
         id: 2,
         titre: "VueJs",
-        src: "../../assets/vuejs.png"
+        src: "../../assets/cmp/vuejs.png"
       },
       {
         id: 3,
         titre: "SQL",
-        src: "../../assets/sql.png"
+        src: "../../assets/cmp/sql.png"
       },
       {
         id: 3,
         titre: "Java",
-        src: "../../assets/java.png"
+        src: "../../assets/cmp/java.png"
       },
       {
         id: 7,
         titre: "Linux",
-        src: "../../assets/linux.png"
+        src: "../../assets/cmp/linux.png"
       },
       {
         id: 8,
         titre: "GitHub",
-        src: "../../assets/github.png"
+        src: "../../assets/profil/github.png"
       }
     ]
 

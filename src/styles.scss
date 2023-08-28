@@ -4,23 +4,26 @@
 @import "~bootstrap-icons/font/bootstrap-icons.css";
 @import "primeicons/primeicons.css";
 
+
+
 #section{
-    background-image: url("../src/assets/bg.jpg");
+    background-image: url("../src/assets/bg/bg.jpg");
     background-size: cover;
     background-repeat: repeat-y;
     color: aliceblue;
 }
 
 .banner{
-    background-image: url("./assets/bg-header.jpg");
+    background-image: url("./assets/bg/bg-header.png");
     background-size: contain;
     background-repeat: no-repeat;
     padding-left: 70px;
     
 }
 
-#form-list, #experience, #competence {
+#form-list, #exp-list, #competence {
     height: 120vh;
+    padding-top: 10px;
 }
 
 #bio{
@@ -28,7 +31,9 @@
 }
 
 #proj-list{
-    height:max-content
+    padding-top: 10px;
+    height: max-content;
+    margin-bottom: 450px;
 }
 
 .logo-icons{
@@ -39,9 +44,6 @@
     width: 80px;
 }
 
-.component{
-    margin-top: 10vh;
-}
 
 #exp {
     height: 80vh;
