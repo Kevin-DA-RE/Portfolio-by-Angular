@@ -15,6 +15,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 // Import PrimeNG
 import { TimelineModule } from 'primeng/timeline';
+import { MenuModule } from 'primeng/menu';
 
 
 @NgModule({
@@ -34,6 +35,7 @@ import { TimelineModule } from 'primeng/timeline';
     AppRoutingModule,
     BrowserAnimationsModule,
     TimelineModule,
+    MenuModule
   ],
   providers: [],
   bootstrap: [AppComponent]

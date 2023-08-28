@@ -39,17 +39,19 @@
           
 
         <div class="col-12 col-md-4">
-          <figure class="d-flex flex-column align-items-center justify-content-between">
-              <img class="logo-projet" src="../../assets/php.png" />          
-              <a class="navbar-toggler d-flex justify-content-center collapsed" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#phpResponsive" aria-controls="phpResponsive"
-                  aria-expanded="false" aria-label="Toggle navigation">
-                  <i class="bi bi-app mt-2" style="font-size:20px"></i></a>
-          </figure>
+          <div>
+            <figure class="d-flex flex-column align-items-center">
+                <img class="logo-projet" src="../../assets/php.png" />          
+                <a class="navbar-toggler d-flex justify-content-center collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#phpResponsive" aria-controls="phpResponsive"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="bi bi-app mt-2" style="font-size:20px"></i></a>
+            </figure>
 
-          <div class="collapse navbar-collapse mb-3" id="phpResponsive">
-            <app-projet *ngFor="let proj of projPHP" [projComp]="proj"></app-projet>
-          </div>      
+            <div class="collapse navbar-collapse mb-3" id="phpResponsive">
+              <app-projet *ngFor="let proj of projPHP" [projComp]="proj"></app-projet>
+            </div>           
+          </div>     
         </div>
       </div>
     </div>

@@ -3,4 +3,5 @@ export class Projet {
     nom!: string;
     descriptif !: string;
     technologie!: string;
+    url ?: string;
 }

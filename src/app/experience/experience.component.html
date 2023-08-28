@@ -1,4 +1,4 @@
- <div id="experience">
+ <div id="exp-list">
         <h2 class="mb-5 banner text-info">{{title}}</h2>
         <div id="exp">
           <p-timeline [value]="experience" class="w-full md:w-20rem" align="alternate">
@@ -6,7 +6,7 @@
                   {{ exp.duree }}
                 </ng-template>
                 <ng-template pTemplate="content" let-exp>
-                  <h3>{{ exp.titre }}</h3>
+                  <h3 class="text-info">{{ exp.titre }}</h3>
                   <h4>{{ exp.entreprise }}</h4>
                   <div *ngIf="exp.support">
                     <h6 [ngStyle]="{'text-decoration': 'underline'}">Support: {{ exp.support }}</h6>

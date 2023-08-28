@@ -1,31 +1,7 @@
-<nav class="navbar navbar-expand-md navbar-light sticky-top">
-  <div class="container-fluid">
-    <h1>Kevin DA RE</h1>
-    <a class="navbar-brand" href="#page-top">
-        <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader"
-            aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-      </a>
-      <div class="collapse navbar-collapse justify-content-end text " id="navbarHeader">
-        <ul class="navbar-nav fw-bold" >
-          <li class="nav-item">
-            <a class="nav-link text-light " href="#bio">A propos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-light " href="#form-list">Formations</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-light " href="#exp-list">Experience</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-light " href="#competence">Compétences</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-light " href="#proj-list">Projets</a>
-          </li>
-        </ul>
-      </div>
-    
-  </div>
-</nav>
+<div class="d-flex flex justify-content-between">
+  <h1>Kevin DA RE</h1>
+  <p-menu #menu [model]="items" [popup]="true"></p-menu>
+  <button pButton type="button" (click)="menu.toggle($event)" icon="pi pi-bars" label="Show">
+    <i class="pi pi-align-justify"style="font-size: 2rem"></i>
+  </button>
+</div>

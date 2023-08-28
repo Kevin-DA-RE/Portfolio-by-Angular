@@ -2,5 +2,9 @@
     <ul>
       <li><h5 class="text-info">{{ projComp.nom }}</h5></li>
       <p class="bg-secondary" [innerHTML]="projComp.descriptif"></p>
+      <div *ngIf="projComp.url">
+        <p><i class="bi bi-arrow-right"></i><a href="{{ projComp.url}}" target="_blank" class="text-light"> Lien vers application </a><i class="bi bi-arrow-left"></i></p>
+      </div>
     </ul>
   </div>
+  

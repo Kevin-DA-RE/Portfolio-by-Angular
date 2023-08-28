@@ -2,6 +2,7 @@
 
 @import "bootstrap-icons/font/bootstrap-icons.min.css";
 @import "~bootstrap-icons/font/bootstrap-icons.css";
+@import "primeicons/primeicons.css";
 
 #section{
     background-image: url("../src/assets/bg.jpg");
@@ -18,12 +19,16 @@
     
 }
 
-#form-list, #experience, #competence, #proj-list {
+#form-list, #experience, #competence {
     height: 120vh;
 }
 
 #bio{
     height: 150vh
+}
+
+#proj-list{
+    height:max-content
 }
 
 .logo-icons{
