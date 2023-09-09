@@ -21,19 +21,15 @@
     
 }
 
-#form-list, #exp-list, #competence {
-    height: 120vh;
+#bio, #form-list, #exp-list, #competence {
+    min-height: 100vh;
     padding-top: 10px;
-}
-
-#bio{
-    height: 150vh
 }
 
 #proj-list{
     padding-top: 10px;
     height: max-content;
-    margin-bottom: 450px;
+    margin-bottom: 30px;
 }
 
 .logo-icons{
@@ -41,9 +37,13 @@
 }
 
 .logo-projet{
-    width: 80px;
+    height: 90px;
 }
 
+#form{
+    height: 80vh;
+    overflow-y: scroll;
+}
 
 #exp {
     height: 80vh;

@@ -44,9 +44,10 @@ export class dataService {
           description: `Intégration script pour application web de CallCenter<br>
         Analyse données en base et échange avec client via outils de ticketing.<br>
         Conception de projet Web sous forme de script avec fonctionnalités d'envoi E-mail et SMS<br>
+        Conception d'interface web ayant pour but d'afficher les données de gestion de l'entreprise
         Aide et assistance au support téléphonique pour accompagner le client.
         `,
-          support: 'Plateforme CallCenter Hermès' 
+          support: 'Plateforme CallCenter Hermès / Front-End: Angular Back-end: Api Symfony' 
         },
         {
             id: 2,
@@ -171,7 +172,7 @@ export class dataService {
             descriptif: `Application visant à liker des photos.<br>
             Ce projet a pour but de liker des photos et de montrer le nombre de like au total`,
             technologie: "Angular",
-            url: "http://kevin-da-re.alwaysdata.net"
+            url: "http://snap-face.alwaysdata.net/"
         },
         {
             id: 2,
